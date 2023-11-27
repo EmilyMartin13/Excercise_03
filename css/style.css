@@ -1,7 +1,6 @@
 body,
 html {
-    min-height: 100%;
-    min-width: 100%;
+    max-width: 100%;
     margin: 0;
     background-color: white
 }
@@ -17,16 +16,24 @@ img {
 
 * {
     box-sizing: border-box;
+
 }
 
 .header {
-    max-width: 100%;
-    height: 150px;
+    box-sizing: border-box;
+    width: 100%;
+    top: 0;
     display: flex;
     justify-content: space-between;
     align-items: center;
     background-color: #DB6E23;
     padding-bottom: 30px;
+    text-align: center;
+    max-width: 100%;
+    color: white;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    margin: auto;
 }
 
 h1 {
@@ -49,11 +56,11 @@ p {
     justify-content: space-between;
     display: flex;
     max-width: 80%;
-    font-style: bold;
 }
 
 button {
     background-color: #DB8836;
+    font-family: condensed;
     border: #DC7929;
     border-style: dashed;
     border-width: 5px;
@@ -63,10 +70,14 @@ button {
     text-decoration: none;
     align-items: center;
     justify-content: space-between;
-    display: flex;
-    padding-left: 60px;
-    padding-right: 60px;
-    border-radius: 40px;
+    display: inline-block;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    padding-left: 35px;
+    padding-right: 35px;
+    border-radius: 30px;
+    max-width: 70%;
+    max-height: 10%;
 
 }
 
@@ -103,6 +114,7 @@ button:active {
 
 #ConfusedPIC {
     display: none;
+
 }
 
 #ShockedPIC {
@@ -110,13 +122,24 @@ button:active {
 }
 
 .box {
-    max-width: 620px;
-    max-height: 850px;
-    margin: 1vw;
-    padding: 5 px;
-    display: flex;
+    max-width: 45%;
+    max-height: 40%;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+}
+
+.footer {
+    position: relative;
+    bottom: 0;
+    width: 100%;
+    text-align: center;
+    max-width: 100%;
+    max-height: 200px;
+    color: white;
+    background-color: #DB6E23;
+    padding: 20px;
+    border-top: 20px;
+
 }

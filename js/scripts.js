@@ -2,10 +2,11 @@ console.log("connected!")
 var x = document.title;
 console.log(x)
 
+
 $('#Happy').on('click', function () {
     $('#HappyPIC').show();
-    
 });
+
 
 $('#Sad').on('click', function () {
     $('#SadPIC').show();
@@ -23,8 +24,9 @@ $('#Confused').on('click', function () {
     $('#ConfusedPIC').show();
 });
 
-$("#Sad', #Angry, #Confused, #Shocked").on('click', function () {
-    $('#HappyPIC').hide();
+
+$("#Sad, #Angry, #Confused, #Shocked").on('click', function () {
+    $("#HappyPIC, #HappyTEXT").hide();
 });
 
 $("#Happy, #Angry, #Confused, #Shocked").on('click', function () {
@@ -40,16 +42,5 @@ $("#Happy, #Sad, #Angry, #Shocked").on('click', function () {
 });
 
 $("#Happy, #Sad, #Angry, #Confused").on('click', function () {
-    $('#ShockedPIC').empty();
+    $('#ShockedPIC').hide();
 });
-
- var hideImage = true;
- $(".HappyPIC").on("click", function () {
-     if ("#Sad, #Angry, #Confused, #Shocked, click" == true){
-         $('#HappyPIC').hide();
-         hideImage = true;
-     } else {
-         $(this).show();
-         hideImage = false;
-     }
- });
